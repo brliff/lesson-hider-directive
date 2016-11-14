@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="directivePractice">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body ng-controller="lessonCtrl">
+
+  <!--<input type="text" ng-model="mainInput">-->
+
+  <!--<lesson-hider my-test="Hello there!" lesson="test" lessons="lessons"></lesson-hider>-->
+
+  <!--<lesson-hider input-value="mainInput"></lesson-hider>-->
+
+  <!--<div> {{ test }}</div>-->
+
+
+  <ul>
+    <lesson-hider ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>
+  </ul>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="lessonCtrl.js"></script>
+  <script src="lessonService.js"></script>
+  <script src="lessonHider.js"></script>
+
+</body>
+</html>
